@@ -463,6 +463,19 @@ footer{
 #contenedor_imgs_footer{
     width: 30%;
 } */
+@media screen and (max-width:550px){
+    
+    #grid_nosotros{
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 20px 200px 100px 250px;
+        grid-template-areas:"a1 a1"
+                            "a3 a3"
+                            "a4 a5"
+                            "a2 a2";
+        
+    }
+
+}
 
 @media screen and (max-width:700px){
     .nav_header{
