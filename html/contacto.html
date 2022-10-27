@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+    
+</head>
+<body>
+    <header>
+
+        <div class="contenedor_img_header">
+            <img src="../img/H5lab2.png" alt="Logo H5lab" class="img_header">
+        </div>
+        <nav class="nav_header">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                
+
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <h1 id="titulo_contacto">Contacto</h1>
+
+        <div class = "grid_contacto">
+            <h2 id="formulario_titulo">Formulario</h2>
+            <h2 id="ubicacion_titulo">Ubicacion</h2>
+            <fieldset id="fieldset_formulario">
+                
+                <form id="form" action="inbox.py" method="">
+                    <!-- name -->
+                    <div>
+                        <label for="id_nombre">Nombre:</label>   
+                        <input type="text" placeholder = "Nombre Apellido" id="id_nombre">
+                    </div>
+                    
+                    <!-- email -->
+                    <div>
+                        <label for="id_email">Email:</label>
+                        <input type="email" placeholder = "nombre@correo.com" id="id_email">
+                    </div>
+                    
+                    <!-- motivo -->
+                    <!-- <div>
+                        <div><label for="id_motivo_servicios">Quiero contratar un servicio</label>
+                            <input type="radio" name="motivo" id="id_motivo_servicios"></div>
+                        <div><label for="id_motivo_equipo">Quiero ser parte del equipo</label>
+                            <input type="radio" name="motivo" id="id_motivo_equipo">
+                        </div>
+                        
+                    </div> -->
+                    
+                    <!-- motivo descripcion -->
+                    <!-- <label for="id_des_motivo">Mensaje:</label>  -->
+                    <div>
+                        <textarea name="" id="id_des_motivo" cols="30" rows="10" placeholder = "El motivo de este mensaje es ..."></textarea>
+                    </div>
+                    <!-- buttons -->
+                    <input id="boton_form" type="submit">  <!-- envia a procesar a action="here" del form -->
+                </form>
+            </fieldset>
+            <iframe id="mapa"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.111976802522!2d-73.07069067930593!3d-36.79186552927787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b5745f460495%3A0x1bf5dd96a8168e34!2sMall%20Plaza%20El%20Trebol!5e0!3m2!1sen!2scl!4v1665175663109!5m2!1sen!2scl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>        
+        
+    </main>
+
+
+    <footer>  
+        <div id="contenedor_imgs_footer">
+            <a href="https://play.google.com/store/apps/dev?id=6271149012795407944"><img class="img_footer" src="../img/googleplay.png" alt=""></a>
+            <a href="https://www.instagram.com/h5lab_games/"><img class="img_footer" src="../img/instagram.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>
