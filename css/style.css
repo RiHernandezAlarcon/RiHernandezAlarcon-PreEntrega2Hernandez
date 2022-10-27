@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin:0;
+    border: 0;
 
 }
 body{
@@ -24,20 +25,10 @@ h2{
     text-align: center;
 }
 header{
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-items: center;
-    align-items: center; */
-
-    /*display: flex;
-    flex-direction: column;
-    align-items: center; */
     background-image: url("../img/fondo.jpg");
     background-size: cover;
-    /* padding-bottom: 20px; */
     position: sticky;
     top: 0px;
-    /*z-index: 10;*/
     z-index: 1;
 
 }
@@ -556,7 +547,7 @@ footer{
     }
     .grid_carta_juego2{
         grid-template-columns: 90px 90px 90px;
-        grid-template-rows: 90px 270px 80px 110px 110px 55px;
+        grid-template-rows: 90px 270px 85px 110px 110px 55px;
         grid-template-areas:"a1 a2 a2"
                             "a4 a4 a4"
                             "a3 a3 a3"
@@ -569,7 +560,7 @@ footer{
     
     #grid_nosotros{
         grid-template-columns: 150px 150px;
-        grid-template-rows: 20px 250px 100px 400px;
+        grid-template-rows: 20px 300px 100px 450px;
         grid-template-areas:"a1 a1"
                             "a3 a3"
                             "a4 a5"
@@ -587,7 +578,7 @@ footer{
     }
     #grid_2_servicios{
         grid-template-columns: 200px;
-        grid-template-rows: 400px 400px 400px 400px;
+        grid-template-rows: 450px 450px 450px 450px;
     }
     #grid_1_servicios{
         display: grid;
