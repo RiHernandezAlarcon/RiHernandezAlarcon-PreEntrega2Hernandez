@@ -465,6 +465,37 @@ footer{
 } */
 
 
+
+@media screen and (max-width:870px){
+    
+    #grid_2_servicios{
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 400px 400px;
+    }
+}
+@media screen and (max-width:800px){
+    
+    #grid_nosotros{
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 20px 200px 200px 250px;
+        grid-template-areas:"a1 a1"
+                            "a3 a3"
+                            "a4 a5"
+                            "a2 a2";
+    }
+    .grid_contacto{
+        grid-template-columns: 360px ;
+        grid-template-rows: 20px 360px 20px 360px;
+        grid-template-areas:"a1"
+                            "a3"
+                            "a2"
+                            "a4";
+        justify-content: center;
+    }
+
+}
+
+
 @media screen and (max-width:700px){
     .nav_header{
         /* width: 100%;
@@ -534,36 +565,6 @@ footer{
                             "a5 a5 a5";
     }
 }
-
-@media screen and (max-width:800px){
-    
-    #grid_nosotros{
-        grid-template-columns: 250px 250px;
-        grid-template-rows: 20px 200px 200px 250px;
-        grid-template-areas:"a1 a1"
-                            "a3 a3"
-                            "a4 a5"
-                            "a2 a2";
-    }
-    .grid_contacto{
-        grid-template-columns: 360px ;
-        grid-template-rows: 20px 360px 20px 360px;
-        grid-template-areas:"a1"
-                            "a3"
-                            "a2"
-                            "a4";
-        justify-content: center;
-    }
-
-}
-
-@media screen and (max-width:870px){
-    
-    #grid_2_servicios{
-        grid-template-columns: 200px 200px;
-        grid-template-rows: 400px 400px;
-    }
-}
 @media screen and (max-width:550px){
     
     #grid_nosotros{
@@ -584,11 +585,6 @@ footer{
                             "a4";
         justify-content: center;
     }
-
-}
-
-@media screen and (max-width:550px){
-    
     #grid_2_servicios{
         grid-template-columns: 200px;
         grid-template-rows: 400px 400px 400px 400px;
