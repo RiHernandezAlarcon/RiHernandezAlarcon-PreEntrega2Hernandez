@@ -513,8 +513,6 @@ footer{
     }
     .grid_carta_juego{
         /* background-color: rgba(0, 0, 0, 0.329); */
-        background-image: linear-gradient(rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0));
-        display: grid;
         grid-template-columns: 90px 90px 90px;
         grid-template-rows: 90px 270px 70px 55px 55px 55px 55px;
         grid-template-areas:"a1 a2 a2"
@@ -524,18 +522,8 @@ footer{
                             "a6 a7 a8"
                             "a6 a7 a8" 
                             "a5 a5 a5";
-        justify-content: center;
-        align-items: center;
-        grid-column-gap: 12px;
-        grid-row-gap: 12px;
-        margin: 35px;
-        padding: 20px;
-        border-radius: 50%;
     }
     .grid_carta_juego2{
-        /* background-color: rgba(0, 0, 0, 0.329); */
-        background-image: linear-gradient(rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0));
-        display: grid;
         grid-template-columns: 90px 90px 90px;
         grid-template-rows: 90px 270px 80px 110px 110px 55px;
         grid-template-areas:"a1 a2 a2"
@@ -544,13 +532,6 @@ footer{
                             "a6 a6 a6"
                             "a7 a7 a7"
                             "a5 a5 a5";
-        justify-content: center;
-        align-items: center;
-        grid-column-gap: 12px;
-        grid-row-gap: 12px;
-        margin: 35px;
-        padding: 20px;
-        border-radius: 50%;
     }
 }
 
@@ -602,6 +583,22 @@ footer{
                             "a2"
                             "a4";
         justify-content: center;
+    }
+
+}
+
+@media screen and (max-width:550px){
+    
+    #grid_2_servicios{
+        grid-template-columns: 200px;
+        grid-template-rows: 400px 400px 400px 400px;
+    }
+    #grid_1_servicios{
+        display: grid;
+        grid-template-columns: 250px ;
+        grid-template-rows: 100px ;
+        grid-template-areas:"b1"
+                            "b2";
     }
 
 }
