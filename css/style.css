@@ -1,8 +1,8 @@
 *{
-    padding: 0;
-    margin:0;
-    border: 0;
-
+    padding: 0px ;
+    margin: 0px ;
+    border: 0px ;
+    margin-bottom: 5px;
 }
 body{
 
@@ -30,6 +30,7 @@ header{
     position: sticky;
     top: 0px;
     z-index: 1;
+    margin: 0px;
 
 }
 
@@ -50,18 +51,23 @@ header{
     /* width: 100%;
     height: 100%; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     height: 28px;
     background-color: black;
     /* z-index: 10; */
+    margin: 0px;
 }
 ul{
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-    /* align-items: center;
-    list-style: none; */
+    /* align-items: center; */
+    list-style: none;
+    height: 20px;
+    padding-left: 0px;
+    width: 100%;
+    /* margin-top: 5px; */
     /* height: 30px; */ 
     /* background-color: rgba(0, 0, 0, 0.134); */
 } 
@@ -72,17 +78,29 @@ ul{
 /* li{
     display: inline-block;
 } */
+/* li{
+    font-size: 18px !important;
+
+} */
 a{
     font-size: 18px;
     color: rgb(231, 231, 231);
     text-decoration: none;
+    align-items: center;
 }
+#carouselExampleFade{
+    grid-area: a3;
+}
+.d-block{
+    border-radius: 3%;
 
+}
 #grid_index{
     display: grid;
     grid-template-columns: 300px 300px;
-    grid-template-rows: 300px;
-    grid-template-areas:"a1 a2";
+    grid-template-rows: 300px 340px;
+    grid-template-areas:"a1 a2"
+                        "a3 a3";
     justify-content: center;
     align-items: center;
     grid-column-gap: 10px;
@@ -108,7 +126,7 @@ a{
 #grid_nosotros{
     display: grid;
     grid-template-columns: 250px 250px 250px;
-    grid-template-rows: 20px 200px 200px;
+    grid-template-rows: 20px 220px 180px;
     grid-template-areas:"a1 a1 a2"
                         "a3 a3 a2"
                         "a4 a5 a2";
@@ -130,11 +148,61 @@ a{
 #nosotros_img1{
     grid-area: a4;
     border-radius: 5%;
+    background-image: url("../img/programacion.jpg");
+    background-size:cover;
+    animation-name: cambio_imagen_1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    
+
 }
 #nosotros_img2{
     grid-area: a5;
     border-radius: 5%;
+    background-image: url("../img/videojuego-movil.jpg");
+    background-size:cover;
+    animation-name: cambio_imagen_2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes cambio_imagen_1{
+    0%{
+        background-image: url("../img/programacion.jpg");
+    }
+    25%{
+        background-image: url("https://www.gameit.es/wp-content/uploads/2022/01/25C13A4B-4DCB-4C46-941B-0966ED7BC1DA.jpeg");
+    }
+    50%{
+        background-image: url("http://www.scratch.school/wp-content/uploads/2022/03/videojuegos-3D-unity-scaled.jpeg");
+    }
+    75%{
+        background-image: url("https://venturebeat.com/wp-content/uploads/2020/08/unity-2.jpg?w=1200&strip=all");
+    }
+    100%{
+        background-image: url("../img/programacion.jpg");
+    }
+}
+@keyframes cambio_imagen_2{
+    0%{
+        background-image: url("../img/videojuego-movil.jpg");
+    }
+    25%{
+        background-image: url("https://i.blogs.es/349946/construct_3/450_1000.jpg");
+    }
+    50%{
+        background-image: url("https://i0.wp.com/ceroideas.es/wp-content/uploads/2019/11/gamemaker-studio.jpg?resize=1140%2C760&ssl=1");
+    }
+    75%{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ25ujsAeoldgv2OCERah6pFzq7cJkfw7CGxw&usqp=CAU");
+    }
+    100%{
+        background-image: url("../img/videojuego-movil.jpg");
+    }
+}
+
+
+
 .img_nosotros{
     width: 100%;
     height: 100%;
@@ -159,7 +227,7 @@ fieldset{
 #grid_1_servicios{
     display: grid;
     grid-template-columns: 360px 290px;
-    grid-template-rows: 50px 250px;
+    grid-template-rows: 50px 280px;
     grid-template-areas:"b1 b3"
                         "b2 b3";
     justify-content: center;
@@ -191,7 +259,7 @@ fieldset{
     background-image: linear-gradient(rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0));
     display: grid;
     grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 400px;
+    grid-template-rows: 500px;
     /* grid-template-areas:"c1 c3"
                         "c2 b3"; */
     justify-content: center;
@@ -232,13 +300,13 @@ fieldset{
     /* background-color: rgba(0, 0, 0, 0.329); */
     background-image: linear-gradient(rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0));
     display: grid;
-    grid-template-columns: 90px 90px 90px 160px 160px;
+    grid-template-columns: 90px 90px 90px 320px;
     grid-template-rows: 90px 70px 55px 55px 55px;
-    grid-template-areas:"a1 a2 a2 a4 a4"
-                        "a3 a3 a3 a4 a4"
-                        "a6 a7 a8 a4 a4"
-                        "a6 a7 a8 a4 a4"
-                        "a6 a7 a8 a5 a5";
+    grid-template-areas:"a1 a2 a2 a4"
+                        "a3 a3 a3 a4"
+                        "a6 a7 a8 a4"
+                        "a6 a7 a8 a4"
+                        "a6 a7 a8 a5";
     justify-content: center;
     align-items: center;
     grid-column-gap: 12px;
@@ -251,14 +319,14 @@ fieldset{
     /* background-color: rgba(0, 0, 0, 0.329); */
     background-image: linear-gradient(rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0));
     display: grid;
-    grid-template-columns: 90px 70px 70px 160px 160px;
+    grid-template-columns: 90px 70px 70px 320px;
     grid-template-rows: 90px 70px 41.25px 41.25px 27.5px 55px;
-    grid-template-areas:"a1 a2 a2 a4 a4"
-                        "a3 a3 a3 a4 a4"
-                        "a6 a6 a6 a4 a4"
-                        "a6 a6 a6 a4 a4"
-                        "a7 a7 a7 a4 a4"
-                        "a7 a7 a7 a5 a5";
+    grid-template-areas:"a1 a2 a2 a4"
+                        "a3 a3 a3 a4"
+                        "a6 a6 a6 a4"
+                        "a6 a6 a6 a4"
+                        "a7 a7 a7 a4"
+                        "a7 a7 a7 a5";
     justify-content: center;
     align-items: center;
     grid-column-gap: 12px;
@@ -282,6 +350,8 @@ fieldset{
 }
 .description_juego{
     grid-area: a3;
+    font-size: 15px ;
+    
 }
 .img_juego_1{
     border-radius: 4%;
@@ -315,16 +385,21 @@ fieldset{
 }
 
 
-.a_juego{
-    color: rgb(51, 51, 206);
-}
-
-.button_googleplay{
+.container_button{
     grid-area: a5;
     height: 100%;
-    width: 70%;
-    justify-self: center;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    justify-items: center; */
+    /* justify-self: center; */
+    flex-direction: center;
 }
+.button_googleplay{
+    background-color: black;
+}
+
+
 .icono_juego{
     border-radius: 25%;
     grid-area: a1;
@@ -418,8 +493,12 @@ label{
     align-items: center;
     
 }
+/* id_des_motivo */
 #boton_form{
     width: 50%;
+}
+#id_des_motivo{
+    height: 40%;
 }
 
 #mapa{
@@ -461,14 +540,14 @@ footer{
     
     #grid_2_servicios{
         grid-template-columns: 200px 200px;
-        grid-template-rows: 400px 400px;
+        grid-template-rows: 500px 500px;
     }
 }
 @media screen and (max-width:800px){
     
     #grid_nosotros{
         grid-template-columns: 250px 250px;
-        grid-template-rows: 20px 200px 200px 250px;
+        grid-template-rows: 20px 200px 180px 250px;
         grid-template-areas:"a1 a1"
                             "a3 a3"
                             "a4 a5"
@@ -488,17 +567,23 @@ footer{
 
 
 @media screen and (max-width:700px){
+    header{
+        position:relative;
+    }
     .nav_header{
         /* width: 100%;
         height: 100%; */
         /* display: flex; */
         /* flex-direction: column; */
         /* justify-content: center; */
-        height: 150px;
+        height: 180px;
+        /* position:sticky;
+        top: 0px; */
+
         /* z-index: 10; */
     }
     ul{
-        height: 150px;
+        height: 180px;
         flex-direction: column;
         align-items: center; 
         justify-items:center;
@@ -508,13 +593,14 @@ footer{
         grid-template-columns: 300px;
         grid-template-rows: 300px 300px;
         grid-template-areas:"a2"
-                            "a1";
+                            "a1"
+                            "a3";
         /* justify-content: center;
         align-items: center;
         grid-column-gap: 10px;
         margin: 30px; */
     }
-    #grid_nosotros{
+    /* #grid_nosotros{
         grid-template-columns: 250px 250px;
         grid-template-rows: 20px 200px 200px 250px;
         grid-template-areas:"a1 a1"
@@ -522,7 +608,7 @@ footer{
                             "a4 a5"
                             "a2 a2";
         
-    }
+    } */
     #grid_1_servicios{
         display: grid;
         grid-template-columns: 400px ;
@@ -560,7 +646,7 @@ footer{
     
     #grid_nosotros{
         grid-template-columns: 150px 150px;
-        grid-template-rows: 20px 300px 100px 450px;
+        grid-template-rows: 20px 350px 100px 450px;
         grid-template-areas:"a1 a1"
                             "a3 a3"
                             "a4 a5"
@@ -578,7 +664,7 @@ footer{
     }
     #grid_2_servicios{
         grid-template-columns: 200px;
-        grid-template-rows: 450px 450px 450px 450px;
+        grid-template-rows: 500px 500px 500px 500px;
     }
     #grid_1_servicios{
         display: grid;
@@ -587,5 +673,4 @@ footer{
         grid-template-areas:"b1"
                             "b2";
     }
-
 }
