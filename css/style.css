@@ -5,11 +5,6 @@
     margin-bottom: 5px;
 }
 body{
-
-    /* background-image: url("../img/fondo.jpg"); */
-    /* background-repeat:no-repeat; */
-    /* background-size: cover; */
-    /* background-color: rgb(37, 37, 148); */
     background-image: linear-gradient(rgb(22, 22, 110),rgb(206, 206, 224));
     z-index: 0;
 }
@@ -48,40 +43,23 @@ header{
     width: 150px;
 }
 .nav_header{
-    /* width: 100%;
-    height: 100%; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: 28px;
     background-color: black;
-    /* z-index: 10; */
     margin: 0px;
 }
 ul{
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-    /* align-items: center; */
     list-style: none;
     height: 20px;
     padding-left: 0px;
     width: 100%;
-    /* margin-top: 5px; */
-    /* height: 30px; */ 
-    /* background-color: rgba(0, 0, 0, 0.134); */
 } 
 
-/* ul{
-
-} */
-/* li{
-    display: inline-block;
-} */
-/* li{
-    font-size: 18px !important;
-
-} */
 a{
     font-size: 18px;
     color: rgb(231, 231, 231);
@@ -106,7 +84,6 @@ a{
     grid-column-gap: 10px;
     margin: 30px;
 
-    
 }
 
 #parrafo_index{
@@ -260,8 +237,6 @@ fieldset{
     display: grid;
     grid-template-columns: 200px 200px 200px 200px;
     grid-template-rows: 500px;
-    /* grid-template-areas:"c1 c3"
-                        "c2 b3"; */
     justify-content: center;
     align-items: center;
     grid-column-gap: 10px;
@@ -274,8 +249,6 @@ fieldset{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* align-items: center;
-    justify-content:space-evenly; */
     width: 200px;
     height: 400px;
 }
@@ -297,7 +270,6 @@ fieldset{
 }
 
 .grid_carta_juego{
-    /* background-color: rgba(0, 0, 0, 0.329); */
     background-image: linear-gradient(rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0));
     display: grid;
     grid-template-columns: 90px 90px 90px 320px;
@@ -316,7 +288,6 @@ fieldset{
     border-radius: 50%;
 }
 .grid_carta_juego2{
-    /* background-color: rgba(0, 0, 0, 0.329); */
     background-image: linear-gradient(rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0));
     display: grid;
     grid-template-columns: 90px 70px 70px 320px;
@@ -389,10 +360,6 @@ fieldset{
     grid-area: a5;
     height: 100%;
     width: 100%;
-    /* display: flex;
-    justify-content: center;
-    justify-items: center; */
-    /* justify-self: center; */
     flex-direction: center;
 }
 .button_googleplay{
@@ -410,9 +377,6 @@ fieldset{
 
 .carta_juego{
     display: inline-block;
-    /*display: flex;
-    align-items: center;
-    justify-content:space-evenly;*/
     width: 400px;
     height: 600px;
     background-color: rgba(19, 19, 110, 0.722);
@@ -420,9 +384,6 @@ fieldset{
 
 }
 .description{
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;*/
     width: 100%;
 }
 
@@ -445,8 +406,6 @@ label{
 }
 
 .grid_contacto{
-    /* background-color: rgba(0, 0, 0, 0.329); */
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0)); */
     display: grid;
     grid-template-columns: 360px 360px ;
     grid-template-rows: 20px 360px;
@@ -458,7 +417,6 @@ label{
     grid-row-gap: 12px;
     margin: 35px;
     padding: 20px;
-    /* border-radius: 50%; */
 }
 
 #formulario_titulo{
@@ -479,10 +437,6 @@ label{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
 }
 
 #form{
@@ -493,7 +447,6 @@ label{
     align-items: center;
     
 }
-/* id_des_motivo */
 #boton_form{
     width: 50%;
 }
@@ -512,7 +465,6 @@ label{
 
 
 footer{
-    /* background-color: hwb(245 8% 38%); */
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -527,12 +479,7 @@ footer{
     height: 30px;
     padding: 5px;
 }
-/* #contenedor_parrafo_footer{
-    width: 70%;
-}
-#contenedor_imgs_footer{
-    width: 30%;
-} */
+
 
 
 
@@ -571,16 +518,7 @@ footer{
         position:relative;
     }
     .nav_header{
-        /* width: 100%;
-        height: 100%; */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: center; */
         height: 180px;
-        /* position:sticky;
-        top: 0px; */
-
-        /* z-index: 10; */
     }
     ul{
         height: 180px;
@@ -589,26 +527,13 @@ footer{
         justify-items:center;
     }
     #grid_index{
-        /* display: grid; */
         grid-template-columns: 300px;
         grid-template-rows: 300px 300px;
         grid-template-areas:"a2"
                             "a1"
                             "a3";
-        /* justify-content: center;
-        align-items: center;
-        grid-column-gap: 10px;
-        margin: 30px; */
     }
-    /* #grid_nosotros{
-        grid-template-columns: 250px 250px;
-        grid-template-rows: 20px 200px 200px 250px;
-        grid-template-areas:"a1 a1"
-                            "a3 a3"
-                            "a4 a5"
-                            "a2 a2";
-        
-    } */
+ 
     #grid_1_servicios{
         display: grid;
         grid-template-columns: 400px ;
@@ -620,7 +545,6 @@ footer{
         display: none;
     }
     .grid_carta_juego{
-        /* background-color: rgba(0, 0, 0, 0.329); */
         grid-template-columns: 90px 90px 90px;
         grid-template-rows: 90px 270px 70px 55px 55px 55px 55px;
         grid-template-areas:"a1 a2 a2"
