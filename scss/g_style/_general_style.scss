@@ -1,0 +1,45 @@
+// General style
+$color_font: rgb(231, 231, 231);
+$degrade_1: linear-gradient(rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0));
+$degrade_body: linear-gradient(rgb(22, 22, 110),rgb(156, 156, 218));
+$color_fieldset: rgba(209, 209, 233, 0.083);
+*{
+    padding: 0px ;
+    margin: 0px ;
+    border: 0px ;
+    margin-bottom: 5px;
+}
+body{
+    background-image:$degrade_body;
+    z-index: 0;
+}
+h1{
+    margin: 16px;
+    color: $color_font;
+}
+h2{
+    margin: 16px;
+    color: $color_font;
+}
+a{
+    color: $color_font;
+}
+
+.titulo{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    margin: 3px;
+    color:$color_font;
+}
+label{
+    color: $color_font;
+}
+
+fieldset{
+    background-color: $color_fieldset;
+}
+
+

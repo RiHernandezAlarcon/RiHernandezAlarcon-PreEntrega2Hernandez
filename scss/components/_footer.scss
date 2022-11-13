@@ -1,0 +1,15 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    height: 60px;
+    padding: 10px;
+}
+.img_footer{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}

@@ -1,0 +1,45 @@
+@mixin img_animation_to_nosotros($g_area,$name_animation) {
+    grid-area: $g_area;
+    animation-name: $name_animation;
+    border-radius: 5%;
+    background-size:cover;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes cambio_imagen_1{
+    0%{
+        background-image: url("../img/programacion.jpg");
+    }
+    25%{
+        background-image: url("https://www.gameit.es/wp-content/uploads/2022/01/25C13A4B-4DCB-4C46-941B-0966ED7BC1DA.jpeg");
+    }
+    50%{
+        background-image: url("http://www.scratch.school/wp-content/uploads/2022/03/videojuegos-3D-unity-scaled.jpeg");
+    }
+    75%{
+        background-image: url("https://venturebeat.com/wp-content/uploads/2020/08/unity-2.jpg?w=1200&strip=all");
+    }
+    100%{
+        background-image: url("../img/programacion.jpg");
+    }
+}
+@keyframes cambio_imagen_2{
+    0%{
+        background-image: url("../img/videojuego-movil.jpg");
+    }
+    25%{
+        background-image: url("https://i.blogs.es/349946/construct_3/450_1000.jpg");
+    }
+    50%{
+        background-image: url("https://i0.wp.com/ceroideas.es/wp-content/uploads/2019/11/gamemaker-studio.jpg?resize=1140%2C760&ssl=1");
+    }
+    75%{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ25ujsAeoldgv2OCERah6pFzq7cJkfw7CGxw&usqp=CAU");
+    }
+    100%{
+        background-image: url("../img/videojuego-movil.jpg");
+    }
+}
