@@ -139,23 +139,23 @@
     padding: 20px;
     border-radius: 50%; 
     @if $tipo == 1{
-        grid-template-columns: 90px 90px 90px 320px;
+        grid-template-columns: 90px 90px 90px 160px 160px;
         grid-template-rows: 90px 70px 55px 55px 55px;
-        grid-template-areas:"a1 a2 a2 a4"
-                            "a3 a3 a3 a4"
-                            "a6 a7 a8 a4"
-                            "a6 a7 a8 a4"
-                            "a6 a7 a8 a5";
+        grid-template-areas:"a1 a2 a2 a4 a4"
+                            "a3 a3 a3 a4 a4"
+                            "a6 a7 a8 a4 a4"
+                            "a6 a7 a8 a4 a4"
+                            "a6 a7 a8 a5 a9";
     }
     @else{
-        grid-template-columns: 90px 70px 70px 320px;
+        grid-template-columns: 90px 70px 70px 160px 160px;
         grid-template-rows: 90px 70px 41.25px 41.25px 27.5px 55px;
-        grid-template-areas:"a1 a2 a2 a4"
-                            "a3 a3 a3 a4"
-                            "a6 a6 a6 a4"
-                            "a6 a6 a6 a4"
-                            "a7 a7 a7 a4"
-                            "a7 a7 a7 a5";
+        grid-template-areas:"a1 a2 a2 a4 a4"
+                            "a3 a3 a3 a4 a4"
+                            "a6 a6 a6 a4 a4"
+                            "a6 a6 a6 a4 a4"
+                            "a7 a7 a7 a4 a4"
+                            "a7 a7 a7 a5 a9";
     }
     
 }
@@ -201,9 +201,20 @@ $areas_img: a6, a7, a8;
 
 
 .container_button{
-    grid-area: a5;
+    grid-area: a5; 
     @extend .img_style;
     flex-direction: center;
+}
+
+.container_privacy_policy{
+    grid-area: a9;
+    @extend .img_style;
+    flex-direction: center;
+}
+
+.game_button{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -328,7 +339,7 @@ $areas_img: a6, a7, a8;
                             "a6 a7 a8"
                             "a6 a7 a8"
                             "a6 a7 a8" 
-                            "a5 a5 a5";
+                            "a5 a5 a9";
     }
     .grid_carta_juego2{
         grid-template-columns: 90px 90px 90px;
@@ -338,7 +349,7 @@ $areas_img: a6, a7, a8;
                             "a3 a3 a3"
                             "a6 a6 a6"
                             "a7 a7 a7"
-                            "a5 a5 a5";
+                            "a5 a5 a9";
     }
 }
 @media screen and (max-width:550px){

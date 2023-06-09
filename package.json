@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test":"echo \"error:no test specified\" &&exit 1",
-    "watch-css":"sass --watch scss/style.scss css/style.css" 
+    "test": "echo \"error:no test specified\" &&exit 1",
+    "watch-css": "sass --watch scss/style.scss css/style.css"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/RiHernandezAlarcon/RiHernandezAlarcon-PreEntrega2Hernandez#readme",
   "devDependencies": {
     "sass": "^1.56.1"
+  },
+  "dependencies": {
+    "pexels": "^1.4.0"
   }
 }

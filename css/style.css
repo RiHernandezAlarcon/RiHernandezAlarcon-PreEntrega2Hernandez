@@ -162,7 +162,7 @@ header {
   margin: 35px;
 }
 
-.img_style, .container_button, .img_juego_3, .img_juego_2, .img_juego_1, .video_juego, #img_servicios, #video_index {
+.img_style, .container_privacy_policy, .container_button, .img_juego_3, .img_juego_2, .img_juego_1, .video_juego, #img_servicios, #video_index {
   border-radius: 4%;
   width: 100%;
   height: 100%;
@@ -292,18 +292,18 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0));
   padding: 20px;
   border-radius: 50%;
-  grid-template-columns: 90px 90px 90px 320px;
+  grid-template-columns: 90px 90px 90px 160px 160px;
   grid-template-rows: 90px 70px 55px 55px 55px;
-  grid-template-areas: "a1 a2 a2 a4" "a3 a3 a3 a4" "a6 a7 a8 a4" "a6 a7 a8 a4" "a6 a7 a8 a5";
+  grid-template-areas: "a1 a2 a2 a4 a4" "a3 a3 a3 a4 a4" "a6 a7 a8 a4 a4" "a6 a7 a8 a4 a4" "a6 a7 a8 a5 a9";
 }
 
 .grid_carta_juego2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0));
   padding: 20px;
   border-radius: 50%;
-  grid-template-columns: 90px 70px 70px 320px;
+  grid-template-columns: 90px 70px 70px 160px 160px;
   grid-template-rows: 90px 70px 41.25px 41.25px 27.5px 55px;
-  grid-template-areas: "a1 a2 a2 a4" "a3 a3 a3 a4" "a6 a6 a6 a4" "a6 a6 a6 a4" "a7 a7 a7 a4" "a7 a7 a7 a5";
+  grid-template-areas: "a1 a2 a2 a4 a4" "a3 a3 a3 a4 a4" "a6 a6 a6 a4 a4" "a6 a6 a6 a4 a4" "a7 a7 a7 a4 a4" "a7 a7 a7 a5 a9";
 }
 
 .name_juego {
@@ -350,6 +350,16 @@ header {
 .container_button {
   grid-area: a5;
   flex-direction: center;
+}
+
+.container_privacy_policy {
+  grid-area: a9;
+  flex-direction: center;
+}
+
+.game_button {
+  width: 100%;
+  height: 100%;
 }
 
 .icono_juego {
@@ -449,12 +459,12 @@ header {
   .grid_carta_juego {
     grid-template-columns: 90px 90px 90px;
     grid-template-rows: 90px 270px 70px 55px 55px 55px 55px;
-    grid-template-areas: "a1 a2 a2" "a4 a4 a4" "a3 a3 a3" "a6 a7 a8" "a6 a7 a8" "a6 a7 a8" "a5 a5 a5";
+    grid-template-areas: "a1 a2 a2" "a4 a4 a4" "a3 a3 a3" "a6 a7 a8" "a6 a7 a8" "a6 a7 a8" "a5 a5 a9";
   }
   .grid_carta_juego2 {
     grid-template-columns: 90px 90px 90px;
     grid-template-rows: 90px 270px 85px 110px 110px 55px;
-    grid-template-areas: "a1 a2 a2" "a4 a4 a4" "a3 a3 a3" "a6 a6 a6" "a7 a7 a7" "a5 a5 a5";
+    grid-template-areas: "a1 a2 a2" "a4 a4 a4" "a3 a3 a3" "a6 a6 a6" "a7 a7 a7" "a5 a5 a9";
   }
 }
 @media screen and (max-width: 550px) {
