@@ -144,10 +144,10 @@ header {
     position: relative;
   }
   .nav_header {
-    height: 180px;
+    height: 65px;
   }
   .nav_header ul {
-    height: 180px;
+    height: 65px;
     flex-direction: column;
     align-items: center;
     justify-items: center;
@@ -191,9 +191,9 @@ header {
 }
 
 #grid_nosotros {
-  grid-template-columns: 250px 250px 250px;
-  grid-template-rows: 20px 220px 180px;
-  grid-template-areas: "a1 a1 a2" "a3 a3 a2" "a4 a5 a2";
+  grid-template-columns: 250px 250px;
+  grid-template-rows: 20px 220px;
+  grid-template-areas: "a1 a1" "a3 a3";
 }
 
 #titulo_nosotros {
@@ -431,8 +431,8 @@ header {
 @media screen and (max-width: 800px) {
   #grid_nosotros {
     grid-template-columns: 250px 250px;
-    grid-template-rows: 20px 200px 180px 250px;
-    grid-template-areas: "a1 a1" "a3 a3" "a4 a5" "a2 a2";
+    grid-template-rows: 20px 200px;
+    grid-template-areas: "a1 a1" "a3 a3";
   }
   .grid_contacto {
     grid-template-columns: 360px;
@@ -470,8 +470,8 @@ header {
 @media screen and (max-width: 550px) {
   #grid_nosotros {
     grid-template-columns: 150px 150px;
-    grid-template-rows: 20px 350px 100px 450px;
-    grid-template-areas: "a1 a1" "a3 a3" "a4 a5" "a2 a2";
+    grid-template-rows: 20px 350px;
+    grid-template-areas: "a1 a1" "a3 a3";
   }
   .grid_contacto {
     grid-template-columns: 280px;
